@@ -1,0 +1,22 @@
+{
+	"name": "@encke/nk-mssql-builder",
+	"version": "1.0.0",
+	"description": "SQL String Builder Class to Extend NK-MSSQL",
+	"main": "sql.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Encke/NK-MSSQL-Builder.git"
+	},
+	"author": "Encke Technologies SRL",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Encke/NK-MSSQL-Builder/issues"
+	},
+	"homepage": "https://github.com/Encke/NK-MSSQL-Builder#readme",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
+}
