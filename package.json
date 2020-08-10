@@ -1,5 +1,5 @@
 {
-	"name": "@encke/nk-mssql-builder",
+	"name": "nk-mssql-builder",
 	"version": "1.0.1",
 	"description": "SQL String Builder Class to Extend NK-MSSQL",
 	"main": "sql.js",
@@ -15,8 +15,5 @@
 	"bugs": {
 		"url": "https://github.com/Encke/NK-MSSQL-Builder/issues"
 	},
-	"homepage": "https://github.com/Encke/NK-MSSQL-Builder#readme",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+	"homepage": "https://github.com/Encke/NK-MSSQL-Builder#readme"
 }
