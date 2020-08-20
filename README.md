@@ -6,17 +6,17 @@ SQL String Builder Class to Extend NK-MSSQL
 Install using NPM
 
 ```bash
-echo "registry=https://npm.pkg.github.com/Encke" >> .npmrc
-npm i @encke/nk-mssql-builder --save
+npm i nk-mongo --save
 ```
 
 ## How to use
 
 This will allow you to use Mongo like calls to MSSQL Databases with no additional programming.
 
+---
 ### Include
 ```node
-const NKSQL = require( '@encke/nk-mssql-builder' )
+const NKSQL = require( '/nk-mssql-builder' )
 ```
 
 ### Get insert query (or queries)
