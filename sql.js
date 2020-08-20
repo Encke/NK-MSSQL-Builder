@@ -34,7 +34,21 @@ const sql = {
 				}
 				querySQL += ( ( ( querySQL.length > 0 )? ' AND ': '' ) + '( ' + sql.wrap( x ) + ' IN( ' + query[x].join( ',' ) + ' ) )' )
 			}	else {
-				querySQL += ( ( ( querySQL.length > 0 )? ' AND ': '' ) + '( ' + sql.wrap( x ) + ' = ' + sql.prepare( query[x] ) + ' )' );
+				let operator = '='
+				if( query[x]['$gt'] )	{
+					operator = '>'
+					query[x] = query[x]['$gt']
+				}	else if( query[x]['$gte'] )	{
+					operator = '>='
+					query[x] = query[x]['$gte']
+				}	else if( query[x]['$lt'] )	{
+					operator = '<'
+					query[x] = query[x]['$lt']
+				}	else if( query[x]['$lte'] )	{
+					operator = '<='
+					query[x] = query[x]['$lte']
+				}
+				querySQL += ( ( ( querySQL.length > 0 )? ' AND ': '' ) + '( ' + sql.wrap( x ) + ' ' + operator + ' ' + sql.prepare( query[x] ) + ' )' );
 			}
 		}
 		return ( ( querySQL.length > 0 )? ( ' WHERE ' + querySQL ): '' )

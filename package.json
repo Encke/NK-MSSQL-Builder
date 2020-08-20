@@ -1,6 +1,6 @@
 {
 	"name": "nk-mssql-builder",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "SQL String Builder Class to Extend NK-MSSQL",
 	"main": "sql.js",
 	"scripts": {
