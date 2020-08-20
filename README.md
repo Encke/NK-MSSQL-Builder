@@ -13,6 +13,7 @@ npm i nk-mongo --save
 
 This will allow you to use Mongo like calls to MSSQL Databases with no additional programming.
 
+---
 ### Include
 ```node
 const NKSQL = require( '/nk-mssql-builder' )
